@@ -1,0 +1,720 @@
+<sdf version='1.6'>
+  <world name='default'>
+    <model name='ground_plane'>
+      <static>1</static>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry>
+            <plane>
+              <normal>0 0 1</normal>
+              <size>100 100</size>
+            </plane>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>100</mu>
+                <mu2>50</mu2>
+              </ode>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='visual'>
+          <cast_shadows>0</cast_shadows>
+          <geometry>
+            <plane>
+              <normal>0 0 1</normal>
+              <size>100 100</size>
+            </plane>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/Grey</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+    </model>
+    <light name='sun' type='directional'>
+      <cast_shadows>1</cast_shadows>
+      <pose frame=''>0 0 10 0 -0 0</pose>
+      <diffuse>0.8 0.8 0.8 1</diffuse>
+      <specular>0.1 0.1 0.1 1</specular>
+      <attenuation>
+        <range>1000</range>
+        <constant>0.9</constant>
+        <linear>0.01</linear>
+        <quadratic>0.001</quadratic>
+      </attenuation>
+      <direction>-0.5 0.5 -1</direction>
+    </light>
+    <gravity>0 0 -9.8</gravity>
+    <magnetic_field>6e-06 2.3e-05 -4.2e-05</magnetic_field>
+    <atmosphere type='adiabatic'/>
+    <physics name='default_physics' default='0' type='ode'>
+      <max_step_size>0.001</max_step_size>
+      <real_time_factor>1</real_time_factor>
+      <real_time_update_rate>1000</real_time_update_rate>
+    </physics>
+    <scene>
+      <ambient>0.4 0.4 0.4 1</ambient>
+      <background>0.7 0.7 0.7 1</background>
+      <shadows>1</shadows>
+    </scene>
+    <spherical_coordinates>
+      <surface_model>EARTH_WGS84</surface_model>
+      <latitude_deg>0</latitude_deg>
+      <longitude_deg>0</longitude_deg>
+      <elevation>0</elevation>
+      <heading_deg>0</heading_deg>
+    </spherical_coordinates>
+    <state world_name='default'>
+      <sim_time>293 536000000</sim_time>
+      <real_time>29 333231556</real_time>
+      <wall_time>1592819965 789209267</wall_time>
+      <iterations>16005</iterations>
+      <model name='Boite de rangement_0'>
+        <pose frame=''>-0.01326 0.745641 -0.000469 0 0 -0.009763</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose frame=''>-0.01326 0.745641 -0.000469 0 0 -0.009763</pose>
+          <velocity>1e-06 -2.1e-05 0.005035 -0.045451 0.000444 5e-06</velocity>
+          <acceleration>-0.009278 -0.090071 11.8119 0.906439 -0.408065 3.08612</acceleration>
+          <wrench>-0.001392 -0.013511 1.77179 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Etoile verte_0'>
+        <pose frame=''>0.033155 0.765174 0.110485 -0.00011 -3e-05 0.006176</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose frame=''>0.033155 0.765174 0.110485 -0.00011 -3e-05 0.006176</pose>
+          <velocity>0.002576 0.001988 0.011719 -0.271789 0.368634 6.8e-05</velocity>
+          <acceleration>6.26188 5.84178 20.1566 -1.65838 -0.684097 2.0973</acceleration>
+          <wrench>0.093928 0.087627 0.302349 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Fleur rose_1'>
+        <pose frame=''>0.04146 0.720328 0.107879 0.00028 8.2e-05 -0.256622</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose frame=''>0.04146 0.720328 0.107879 0.00028 8.2e-05 -0.256622</pose>
+          <velocity>0.001382 -0.005784 -0.005282 0.806724 0.182225 0.00234</velocity>
+          <acceleration>0.657038 -5.98047 -1.24204 -1.71227 1.01432 -0.816358</acceleration>
+          <wrench>0.009856 -0.089707 -0.018631 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Hexagone jaune_0'>
+        <pose frame=''>-0.018483 0.821721 0.131984 -7e-05 1e-06 -0.01698</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose frame=''>-0.018483 0.821721 0.131984 -7e-05 1e-06 -0.01698</pose>
+          <velocity>5e-06 0.000452 0.011579 -0.045521 0.000458 5e-06</velocity>
+          <acceleration>0.017091 1.36641 24.3702 0.80149 1.46612 0.030349</acceleration>
+          <wrench>0.000325 0.025962 0.463035 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Losange orange_0'>
+        <pose frame=''>-0.018611 0.754116 0.115711 0 -0 0.100026</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose frame=''>-0.018611 0.754116 0.115711 0 -0 0.100026</pose>
+          <velocity>1e-06 0.000379 0.004724 -0.045381 -0.000101 5e-06</velocity>
+          <acceleration>-0.012384 0.287773 5.82665 1.32019 -0.801167 3.07321</acceleration>
+          <wrench>-0.000173 0.004029 0.081573 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Ovale rose_0'>
+        <pose frame=''>-0.020955 0.684573 0.125778 0.000142 3.8e-05 0.126482</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose frame=''>-0.020955 0.684573 0.125778 0.000142 3.8e-05 0.126482</pose>
+          <velocity>0.004637 -0.006724 0.000766 0.93613 0.635309 0.00089</velocity>
+          <acceleration>9.10443 -6.09708 12.8481 -0.191307 1.54033 -2.04183</acceleration>
+          <wrench>0.145671 -0.097553 0.20557 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Rectangle Bleu_0'>
+        <pose frame=''>-0.054328 0.783309 0.138173 -6.5e-05 -1e-06 -0.046175</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose frame=''>-0.054328 0.783309 0.138173 -6.5e-05 -1e-06 -0.046175</pose>
+          <velocity>5e-06 0.00042 0.013341 -0.045507 0.00047 5e-06</velocity>
+          <acceleration>0.017271 1.26935 29.6943 -2.20017 -1.26822 -3.10991</acceleration>
+          <wrench>0.000294 0.021579 0.504804 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Rond vert'>
+        <pose frame=''>-0.055653 0.721991 0.148294 -0.000184 -0.000461 -0.082146</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose frame=''>-0.055653 0.721991 0.148294 -0.000184 -0.000461 -0.082146</pose>
+          <velocity>0.003859 -0.004839 -0.000131 0.790145 0.617242 0.00049</velocity>
+          <acceleration>6.27348 -5.65367 7.64095 1.97553 0.462681 0.651261</acceleration>
+          <wrench>0.087829 -0.079151 0.106973 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Triangle orange_1'>
+        <pose frame=''>-0.05626 0.691431 0.168122 0 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose frame=''>-0.05626 0.691431 0.168122 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='carre_bleu'>
+        <pose frame=''>0.038213 0.81528 0.109894 -6.6e-05 1e-06 -0.001126</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose frame=''>0.038213 0.81528 0.109894 -6.6e-05 1e-06 -0.001126</pose>
+          <velocity>4e-06 0.000409 0.011847 -0.045537 0.000425 4e-06</velocity>
+          <acceleration>0.015997 1.23824 25.1788 0.678568 1.50537 0.031472</acceleration>
+          <wrench>0.000288 0.022288 0.453218 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='ground_plane'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose frame=''>0 0 0 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <light name='sun'>
+        <pose frame=''>0 0 10 0 -0 0</pose>
+      </light>
+    </state>
+    <gui fullscreen='0'>
+      <camera name='user_camera'>
+        <pose frame=''>0.128665 0.309207 0.875523 0 1.10979 1.59856</pose>
+        <view_controller>orbit</view_controller>
+        <projection_type>perspective</projection_type>
+      </camera>
+    </gui>
+    <model name='Boite de rangement_0'>
+      <static>0</static>
+      <link name='link'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>model://boite_de_rangement/meshes/boite_de_rangementv5.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>model://boite_de_rangement/meshes/boite_de_rangementv5.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+          <material/>
+        </visual>
+        <inertial>
+          <mass>0.15</mass>
+          <inertia>
+            <ixx>0.001</ixx>
+            <ixy>6.7e-18</ixy>
+            <ixz>0</ixz>
+            <iyy>0.0064</iyy>
+            <iyz>0</iyz>
+            <izz>0.0014</izz>
+          </inertia>
+        </inertial>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+      <pose frame=''>-0.013973 0.745011 0 0 -0 0</pose>
+    </model>
+    <model name='carre_bleu'>
+      <static>0</static>
+      <link name='link'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>model://carre_bleu/meshes/carre_bleu.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>model://carre_bleu/meshes/carre_bleu.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+          <material/>
+        </visual>
+        <inertial>
+          <mass>0.018</mass>
+          <inertia>
+            <ixx>1.7e-06</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1.7e-06</iyy>
+            <iyz>0</iyz>
+            <izz>2.9e-06</izz>
+          </inertia>
+        </inertial>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+      <pose frame=''>0.038431 0.815679 0 0 -0 0</pose>
+    </model>
+    <model name='Etoile verte_0'>
+      <static>0</static>
+      <link name='link'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>model://etoile_verte/meshes/etoile_verte.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>model://etoile_verte/meshes/etoile_verte.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+          <material/>
+        </visual>
+        <inertial>
+          <mass>0.015</mass>
+          <inertia>
+            <ixx>6e-07</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>6e-07</iyy>
+            <iyz>0</iyz>
+            <izz>9e-07</izz>
+          </inertia>
+        </inertial>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+      <pose frame=''>0.033238 0.767526 0 0 -0 0</pose>
+    </model>
+    <model name='Fleur rose_1'>
+      <static>0</static>
+      <link name='link'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>model://fleur_rose/meshes/fleur_rose.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>model://fleur_rose/meshes/fleur_rose.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+          <material/>
+        </visual>
+        <inertial>
+          <mass>0.015</mass>
+          <inertia>
+            <ixx>1.9e-06</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1.9e-06</iyy>
+            <iyz>0</iyz>
+            <izz>3.3e-06</izz>
+          </inertia>
+        </inertial>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+      <pose frame=''>0.038396 0.712255 0 0 -0 0</pose>
+    </model>
+    <model name='Hexagone jaune_0'>
+      <static>0</static>
+      <link name='link'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>model://hexagone_jaune/meshes/hexagone_jaune.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>model://hexagone_jaune/meshes/hexagone_jaune.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+          <material/>
+        </visual>
+        <inertial>
+          <mass>0.019</mass>
+          <inertia>
+            <ixx>2.9e-06</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>2.9e-06</iyy>
+            <iyz>0</iyz>
+            <izz>5e-06</izz>
+          </inertia>
+        </inertial>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+      <pose frame=''>-0.018881 0.820831 0 0 -0 0</pose>
+    </model>
+    <model name='Losange orange_0'>
+      <static>0</static>
+      <link name='link'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>model://losange_orange/meshes/losange_orange.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>model://losange_orange/meshes/losange_orange.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+          <material/>
+        </visual>
+        <inertial>
+          <mass>0.014</mass>
+          <inertia>
+            <ixx>2.3e-06</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1.4e-06</iyy>
+            <iyz>0</iyz>
+            <izz>3.2e-06</izz>
+          </inertia>
+        </inertial>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+      <pose frame=''>-0.018459 0.753807 0 0 -0 0</pose>
+    </model>
+    <model name='Ovale rose_0'>
+      <static>0</static>
+      <link name='link'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>model://ovale_rose/meshes/ovale_rose.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>model://ovale_rose/meshes/ovale_rose.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+          <material/>
+        </visual>
+        <inertial>
+          <mass>0.016</mass>
+          <inertia>
+            <ixx>1.8e-06</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>3e-06</iyy>
+            <iyz>0</iyz>
+            <izz>4.2e-06</izz>
+          </inertia>
+        </inertial>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+      <pose frame=''>-0.012457 0.68124 0 0 -0 0</pose>
+    </model>
+    <model name='Rectangle Bleu_0'>
+      <static>0</static>
+      <link name='link'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>model://rectangle_bleu/meshes/rectangle_bleu.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>model://rectangle_bleu/meshes/rectangle_bleu.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+          <material/>
+        </visual>
+        <inertial>
+          <mass>0.017</mass>
+          <inertia>
+            <ixx>2.2e-06</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>4.1e-06</iyy>
+            <iyz>0</iyz>
+            <izz>5.6e-06</izz>
+          </inertia>
+        </inertial>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+      <pose frame=''>-0.053292 0.783193 0 0 -0 0</pose>
+    </model>
+    <model name='Rond vert'>
+      <static>0</static>
+      <link name='link'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>model://rond_vert/meshes/rond_vert.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>model://rond_vert/meshes/rond_vert.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+          <material/>
+        </visual>
+        <inertial>
+          <mass>0.014</mass>
+          <inertia>
+            <ixx>1.7e-06</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1.7e-06</iyy>
+            <iyz>0</iyz>
+            <izz>3e-06</izz>
+          </inertia>
+        </inertial>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+      <pose frame=''>-0.053967 0.723035 0 0 -0 0</pose>
+    </model>
+    <model name='Triangle orange_1'>
+      <static>0</static>
+      <link name='link'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>model://triangle_orange/meshes/triangle_orange.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>model://triangle_orange/meshes/triangle_orange.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+          <material/>
+        </visual>
+        <inertial>
+          <mass>0.011</mass>
+          <inertia>
+            <ixx>1e-06</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1e-06</iyy>
+            <iyz>0</iyz>
+            <izz>1.7e-06</izz>
+          </inertia>
+        </inertial>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+      <pose frame=''>-0.05626 0.691431 0 0 -0 0</pose>
+    </model>
+  </world>
+</sdf>

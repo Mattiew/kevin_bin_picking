@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <asset>
+    <contributor>
+      <author>TesseKetor</author>
+    </contributor>
+    <created>2020-06-21T16:52:10</created>
+    <modified>2020-06-21T16:52:10</modified>
+    <subject>3d Model</subject>
+    <unit name="meter" meter="1"/>
+    <up_axis>Z_UP</up_axis>
+  </asset>
+  <library_effects>
+    <effect id="Entity2effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <phong>
+            <ambient>
+              <color>0 0 0 1</color>
+            </ambient>
+            <diffuse>
+              <color>0.5999999999999999 0.5999999999999999 0.5999999999999999 1</color>
+            </diffuse>
+            <specular>
+              <color>1 1 1 1</color>
+            </specular>
+            <shininess>
+              <float>0.5</float>
+            </shininess>
+            <transparency>
+              <float>0</float>
+            </transparency>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_materials>
+    <material id="Entity2material" name="Corps1">
+      <instance_effect url="#Entity2effect"/>
+    </material>
+  </library_materials>
+  <library_geometries>
+    <geometry id="Entity2geometry" name="Corps12">
+      <mesh>
+        <source id="Entity2geometry-positions">
+          <float_array id="Entity2geometry-positions-array" count="252">0.2000000029802322 21.79999923706055 0.2000000029802322 15.80000019073486 21.79999923706055 0.2000000029802322 0.2000000029802322 21.79999923706055 8 0.2000000029802322 21.79999923706055 8 15.80000019073486 21.79999923706055 0.2000000029802322 15.80000019073486 21.79999923706055 8 15.80000019073486 21.79999923706055 0.2000000029802322 15.80000019073486 0.2000000029802322 0.2000000029802322 15.80000019073486 21.79999923706055 8 15.80000019073486 21.79999923706055 8 15.80000019073486 0.2000000029802322 0.2000000029802322 15.80000019073486 0.2000000029802322 8 15.80000019073486 0.2000000029802322 0.2000000029802322 0.2000000029802322 0.2000000029802322 0.2000000029802322 15.80000019073486 0.2000000029802322 8 15.80000019073486 0.2000000029802322 8 0.2000000029802322 0.2000000029802322 0.2000000029802322 0.2000000029802322 0.2000000029802322 8 0.2000000029802322 0.2000000029802322 0.2000000029802322 0.2000000029802322 21.79999923706055 0.2000000029802322 0.2000000029802322 0.2000000029802322 8 0.2000000029802322 0.2000000029802322 8 0.2000000029802322 21.79999923706055 0.2000000029802322 0.2000000029802322 21.79999923706055 8 0.2000000029802322 0.2000000029802322 0.2000000029802322 15.80000019073486 0.2000000029802322 0.2000000029802322 0.2000000029802322 21.79999923706055 0.2000000029802322 0.2000000029802322 21.79999923706055 0.2000000029802322 15.80000019073486 0.2000000029802322 0.2000000029802322 15.80000019073486 21.79999923706055 0.2000000029802322 16 22 0 0 22 0 16 22 8 16 22 8 0 22 0 0 22 8 16 0 0 16 22 0 16 0 8 16 0 8 16 22 0 16 22 8 0 0 0 16 0 0 0 0 8 0 0 8 16 0 0 16 0 8 0 22 0 0 0 0 0 22 8 0 22 8 0 0 0 0 0 8 15.80000019073486 21.79999923706055 8 0 22 8 0.2000000029802322 21.79999923706055 8 0.2000000029802322 21.79999923706055 8 0 22 8 0 0 8 0.2000000029802322 21.79999923706055 8 0 0 8 0.2000000029802322 0.2000000029802322 8 0.2000000029802322 0.2000000029802322 8 0 0 8 16 0 8 0.2000000029802322 0.2000000029802322 8 16 0 8 15.80000019073486 0.2000000029802322 8 15.80000019073486 0.2000000029802322 8 16 0 8 15.80000019073486 21.79999923706055 8 15.80000019073486 21.79999923706055 8 16 0 8 16 22 8 15.80000019073486 21.79999923706055 8 16 22 8 0 22 8 0 22 0 16 22 0 0 0 0 0 0 0 16 22 0 16 0 0</float_array>
+          <technique_common>
+            <accessor source="#Entity2geometry-positions-array" count="84" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Entity2geometry-normals">
+          <float_array id="Entity2geometry-normals-array" count="252">0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1</float_array>
+          <technique_common>
+            <accessor source="#Entity2geometry-normals-array" count="84" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Entity2geometry-vertices">
+          <input semantic="POSITION" source="#Entity2geometry-positions"/>
+        </vertices>
+        <triangles count="28">
+          <input semantic="VERTEX" source="#Entity2geometry-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Entity2geometry-normals" offset="0"/>
+          <p>0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 80 81 82 83</p>
+        </triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_visual_scenes>
+    <visual_scene id="Scene">
+      <node id="Entity0node" name="Boite de rangement v1" type="NODE">
+        <node id="Entity1node" name="Boite de rangement v1" type="NODE">
+          <node id="Entity2node" name="Corps1" type="NODE">
+            <instance_geometry url="#Entity2geometry">
+              <bind_material>
+                <technique_common>
+                  <instance_material symbol="Entity2material" target="#Entity2material"/>
+                </technique_common>
+              </bind_material>
+            </instance_geometry>
+          </node>
+        </node>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#Scene"/>
+  </scene>
+</COLLADA>
