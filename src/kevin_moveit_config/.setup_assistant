@@ -1,0 +1,11 @@
+moveit_setup_assistant_config:
+  URDF:
+    package: kevin_description
+    relative_path: urdf/kevin.xacro
+    xacro_args: "--inorder "
+  SRDF:
+    relative_path: config/kevin.srdf
+  CONFIG:
+    author_name: Matthieu
+    author_email: rousseaumatth@orange.fr
+    generated_timestamp: 1592945114

@@ -1,0 +1,8 @@
+prefix=/home/matthieu/catkin_ws/devel
+
+Name: kevin_description
+Description: Description of kevin_description
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

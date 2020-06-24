@@ -1,0 +1,175 @@
+<?xml version="1.0" ?>
+<robot name="kevin" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+<xacro:include filename="$(find kevin_description)/urdf/materials.xacro" />
+<xacro:include filename="$(find kevin_description)/urdf/kevin.trans" />
+<xacro:include filename="$(find kevin_description)/urdf/kevin.gazebo" />
+<link name="base_link">
+  <inertial>
+    <origin rpy="0 0 0" xyz="-0.07500900413459072 0.07499878591110573 0.010035808613354931"/>
+    <mass value="3.3827666003481562"/>
+    <inertia ixx="0.00634" ixy="-0.0" ixz="1e-06" iyy="0.006337" iyz="0.0" izz="0.012426"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="0 0 0"/>
+    <geometry>
+      <mesh filename="package://kevin_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="0 0 0"/>
+    <geometry>
+      <mesh filename="package://kevin_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Link_1_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="-0.0015441084349696876 -6.6837240350753335e-06 0.1039912626175992"/>
+    <mass value="0.5045589007213359"/>
+    <inertia ixx="0.001909" ixy="-0.0" ixz="5e-05" iyy="0.001934" iyz="0.0" izz="0.000262"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="0.064323 -0.074799 -0.053627"/>
+    <geometry>
+      <mesh filename="package://kevin_description/meshes/Link_1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="0.064323 -0.074799 -0.053627"/>
+    <geometry>
+      <mesh filename="package://kevin_description/meshes/Link_1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Link_2_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="-0.021316145986816276 -0.05651058335050174 0.05659164796984706"/>
+    <mass value="0.5045589194139898"/>
+    <inertia ixx="0.001867" ixy="2.2e-05" ixz="-2.4e-05" iyy="0.001083" iyz="0.000815" izz="0.001078"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="0.120064 -0.074708 -0.244413"/>
+    <geometry>
+      <mesh filename="package://kevin_description/meshes/Link_2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="0.120064 -0.074708 -0.244413"/>
+    <geometry>
+      <mesh filename="package://kevin_description/meshes/Link_2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Link_3_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="0.02098034285000687 -0.051351832195375195 -0.05201761409226252"/>
+    <mass value="0.5045589000535378"/>
+    <inertia ixx="0.001843" ixy="-2.1e-05" ixz="-2.2e-05" iyy="0.00107" iyz="-0.000803" izz="0.001066"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="0.08731 0.040026 -0.362097"/>
+    <geometry>
+      <mesh filename="package://kevin_description/meshes/Link_3_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="0.08731 0.040026 -0.362097"/>
+    <geometry>
+      <mesh filename="package://kevin_description/meshes/Link_3_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Link_4_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="-0.023305400358932027 -0.07835640375461944 2.6229984602388345e-05"/>
+    <mass value="0.5096750020889563"/>
+    <inertia ixx="0.002064" ixy="-4.1e-05" ixz="0.0" iyy="0.000246" iyz="2e-06" izz="0.002071"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="0.120064 0.146092 -0.253375"/>
+    <geometry>
+      <mesh filename="package://kevin_description/meshes/Link_4_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="0.120064 0.146092 -0.253375"/>
+    <geometry>
+      <mesh filename="package://kevin_description/meshes/Link_4_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Link_5_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="-0.00026252289388073446 -0.030396403000808536 8.109964721125795e-05"/>
+    <mass value="0.4083077929947924"/>
+    <inertia ixx="0.00013" ixy="-0.0" ixz="0.0" iyy="0.000176" iyz="0.0" izz="0.000132"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="0.14351 0.35822 -0.254287"/>
+    <geometry>
+      <mesh filename="package://kevin_description/meshes/Link_5_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="0.14351 0.35822 -0.254287"/>
+    <geometry>
+      <mesh filename="package://kevin_description/meshes/Link_5_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<joint name="Revolution31" type="continuous">
+  <origin rpy="0 0 0" xyz="-0.064323 0.074799 0.053627"/>
+  <parent link="base_link"/>
+  <child link="Link_1_1"/>
+  <axis xyz="0.0 0.0 1.0"/>
+</joint>
+
+<joint name="Revolution32" type="continuous">
+  <origin rpy="0 0 0" xyz="-0.055741 -9.1e-05 0.190786"/>
+  <parent link="Link_1_1"/>
+  <child link="Link_2_1"/>
+  <axis xyz="-1.0 -0.0 0.0"/>
+</joint>
+
+<joint name="Revolution33" type="continuous">
+  <origin rpy="0 0 0" xyz="0.032754 -0.114734 0.117684"/>
+  <parent link="Link_2_1"/>
+  <child link="Link_3_1"/>
+  <axis xyz="1.0 -0.0 -0.0"/>
+</joint>
+
+<joint name="Revolution34" type="continuous">
+  <origin rpy="0 0 0" xyz="-0.032754 -0.106066 -0.108722"/>
+  <parent link="Link_3_1"/>
+  <child link="Link_4_1"/>
+  <axis xyz="-1.0 -0.0 0.0"/>
+</joint>
+
+<joint name="Revolution35" type="continuous">
+  <origin rpy="0 0 0" xyz="-0.023446 -0.212128 0.000912"/>
+  <parent link="Link_4_1"/>
+  <child link="Link_5_1"/>
+  <axis xyz="0.0 -1.0 -0.0"/>
+</joint>
+
+<!-- Used for fixing robot to Gazebo 'base_link' -->
+  <link name="world"/>
+
+  <joint name="fixed" type="fixed">
+    <parent link="world"/>
+    <child link="base_link"/>
+  </joint>
+</robot>

@@ -437,6 +437,42 @@ clean: kevin_gazebo/CMakeFiles/_catkin_empty_exported_target.dir/clean
 .PHONY : clean
 
 #=============================================================================
+# Directory level rules for directory kevin_description
+
+# Convenience name for "all" pass in the directory.
+kevin_description/all:
+
+.PHONY : kevin_description/all
+
+# Convenience name for "clean" pass in the directory.
+kevin_description/clean:
+
+.PHONY : kevin_description/clean
+
+# Convenience name for "preinstall" pass in the directory.
+kevin_description/preinstall:
+
+.PHONY : kevin_description/preinstall
+
+#=============================================================================
+# Directory level rules for directory kevin_moveit_config
+
+# Convenience name for "all" pass in the directory.
+kevin_moveit_config/all:
+
+.PHONY : kevin_moveit_config/all
+
+# Convenience name for "clean" pass in the directory.
+kevin_moveit_config/clean:
+
+.PHONY : kevin_moveit_config/clean
+
+# Convenience name for "preinstall" pass in the directory.
+kevin_moveit_config/preinstall:
+
+.PHONY : kevin_moveit_config/preinstall
+
+#=============================================================================
 # Special targets to cleanup operation of make.
 
 # Special rule to run CMake to check the build system integrity.

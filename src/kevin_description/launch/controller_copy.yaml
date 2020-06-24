@@ -1,0 +1,27 @@
+
+  # Publish all joint states -----------------------------------
+  joint_state_controller:
+    type: joint_state_controller/JointStateController
+    publish_rate: 50
+
+  # Position Controllers --------------------------------------
+  Revolution31_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: Revolution31
+    pid: {p: 0.01, i: 0.005, d: 1}
+  Revolution32_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: Revolution32
+    pid: {p: 5, i: 0.007, d: 0.9}
+  Revolution33_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: Revolution33
+    pid: {p: 10.0, i: 0.0, d: 0.0}
+  Revolution34_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: Revolution34
+    pid: {p: 10.0, i: 0.0, d: 0.0}
+  Revolution35_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: Revolution35
+    pid: {p: 10.0, i: 0.0, d: 0.0}

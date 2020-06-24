@@ -1,5 +1,18 @@
 <sdf version='1.6'>
   <world name='default'>
+    <light name='sun' type='directional'>
+      <cast_shadows>1</cast_shadows>
+      <pose frame=''>0 0 10 0 -0 0</pose>
+      <diffuse>0.8 0.8 0.8 1</diffuse>
+      <specular>0.1 0.1 0.1 1</specular>
+      <attenuation>
+        <range>1000</range>
+        <constant>0.9</constant>
+        <linear>0.01</linear>
+        <quadratic>0.001</quadratic>
+      </attenuation>
+      <direction>-0.5 0.5 -1</direction>
+    </light>
     <model name='ground_plane'>
       <static>1</static>
       <link name='link'>
@@ -47,19 +60,6 @@
         <gravity>1</gravity>
       </link>
     </model>
-    <light name='sun' type='directional'>
-      <cast_shadows>1</cast_shadows>
-      <pose frame=''>0 0 10 0 -0 0</pose>
-      <diffuse>0.8 0.8 0.8 1</diffuse>
-      <specular>0.1 0.1 0.1 1</specular>
-      <attenuation>
-        <range>1000</range>
-        <constant>0.9</constant>
-        <linear>0.01</linear>
-        <quadratic>0.001</quadratic>
-      </attenuation>
-      <direction>-0.5 0.5 -1</direction>
-    </light>
     <gravity>0 0 -9.8</gravity>
     <magnetic_field>6e-06 2.3e-05 -4.2e-05</magnetic_field>
     <atmosphere type='adiabatic'/>
@@ -80,133 +80,7 @@
       <elevation>0</elevation>
       <heading_deg>0</heading_deg>
     </spherical_coordinates>
-    <state world_name='default'>
-      <sim_time>293 536000000</sim_time>
-      <real_time>29 333231556</real_time>
-      <wall_time>1592819965 789209267</wall_time>
-      <iterations>16005</iterations>
-      <model name='Boite de rangement_0'>
-        <pose frame=''>-0.01326 0.745641 -0.000469 0 0 -0.009763</pose>
-        <scale>1 1 1</scale>
-        <link name='link'>
-          <pose frame=''>-0.01326 0.745641 -0.000469 0 0 -0.009763</pose>
-          <velocity>1e-06 -2.1e-05 0.005035 -0.045451 0.000444 5e-06</velocity>
-          <acceleration>-0.009278 -0.090071 11.8119 0.906439 -0.408065 3.08612</acceleration>
-          <wrench>-0.001392 -0.013511 1.77179 0 -0 0</wrench>
-        </link>
-      </model>
-      <model name='Etoile verte_0'>
-        <pose frame=''>0.033155 0.765174 0.110485 -0.00011 -3e-05 0.006176</pose>
-        <scale>1 1 1</scale>
-        <link name='link'>
-          <pose frame=''>0.033155 0.765174 0.110485 -0.00011 -3e-05 0.006176</pose>
-          <velocity>0.002576 0.001988 0.011719 -0.271789 0.368634 6.8e-05</velocity>
-          <acceleration>6.26188 5.84178 20.1566 -1.65838 -0.684097 2.0973</acceleration>
-          <wrench>0.093928 0.087627 0.302349 0 -0 0</wrench>
-        </link>
-      </model>
-      <model name='Fleur rose_1'>
-        <pose frame=''>0.04146 0.720328 0.107879 0.00028 8.2e-05 -0.256622</pose>
-        <scale>1 1 1</scale>
-        <link name='link'>
-          <pose frame=''>0.04146 0.720328 0.107879 0.00028 8.2e-05 -0.256622</pose>
-          <velocity>0.001382 -0.005784 -0.005282 0.806724 0.182225 0.00234</velocity>
-          <acceleration>0.657038 -5.98047 -1.24204 -1.71227 1.01432 -0.816358</acceleration>
-          <wrench>0.009856 -0.089707 -0.018631 0 -0 0</wrench>
-        </link>
-      </model>
-      <model name='Hexagone jaune_0'>
-        <pose frame=''>-0.018483 0.821721 0.131984 -7e-05 1e-06 -0.01698</pose>
-        <scale>1 1 1</scale>
-        <link name='link'>
-          <pose frame=''>-0.018483 0.821721 0.131984 -7e-05 1e-06 -0.01698</pose>
-          <velocity>5e-06 0.000452 0.011579 -0.045521 0.000458 5e-06</velocity>
-          <acceleration>0.017091 1.36641 24.3702 0.80149 1.46612 0.030349</acceleration>
-          <wrench>0.000325 0.025962 0.463035 0 -0 0</wrench>
-        </link>
-      </model>
-      <model name='Losange orange_0'>
-        <pose frame=''>-0.018611 0.754116 0.115711 0 -0 0.100026</pose>
-        <scale>1 1 1</scale>
-        <link name='link'>
-          <pose frame=''>-0.018611 0.754116 0.115711 0 -0 0.100026</pose>
-          <velocity>1e-06 0.000379 0.004724 -0.045381 -0.000101 5e-06</velocity>
-          <acceleration>-0.012384 0.287773 5.82665 1.32019 -0.801167 3.07321</acceleration>
-          <wrench>-0.000173 0.004029 0.081573 0 -0 0</wrench>
-        </link>
-      </model>
-      <model name='Ovale rose_0'>
-        <pose frame=''>-0.020955 0.684573 0.125778 0.000142 3.8e-05 0.126482</pose>
-        <scale>1 1 1</scale>
-        <link name='link'>
-          <pose frame=''>-0.020955 0.684573 0.125778 0.000142 3.8e-05 0.126482</pose>
-          <velocity>0.004637 -0.006724 0.000766 0.93613 0.635309 0.00089</velocity>
-          <acceleration>9.10443 -6.09708 12.8481 -0.191307 1.54033 -2.04183</acceleration>
-          <wrench>0.145671 -0.097553 0.20557 0 -0 0</wrench>
-        </link>
-      </model>
-      <model name='Rectangle Bleu_0'>
-        <pose frame=''>-0.054328 0.783309 0.138173 -6.5e-05 -1e-06 -0.046175</pose>
-        <scale>1 1 1</scale>
-        <link name='link'>
-          <pose frame=''>-0.054328 0.783309 0.138173 -6.5e-05 -1e-06 -0.046175</pose>
-          <velocity>5e-06 0.00042 0.013341 -0.045507 0.00047 5e-06</velocity>
-          <acceleration>0.017271 1.26935 29.6943 -2.20017 -1.26822 -3.10991</acceleration>
-          <wrench>0.000294 0.021579 0.504804 0 -0 0</wrench>
-        </link>
-      </model>
-      <model name='Rond vert'>
-        <pose frame=''>-0.055653 0.721991 0.148294 -0.000184 -0.000461 -0.082146</pose>
-        <scale>1 1 1</scale>
-        <link name='link'>
-          <pose frame=''>-0.055653 0.721991 0.148294 -0.000184 -0.000461 -0.082146</pose>
-          <velocity>0.003859 -0.004839 -0.000131 0.790145 0.617242 0.00049</velocity>
-          <acceleration>6.27348 -5.65367 7.64095 1.97553 0.462681 0.651261</acceleration>
-          <wrench>0.087829 -0.079151 0.106973 0 -0 0</wrench>
-        </link>
-      </model>
-      <model name='Triangle orange_1'>
-        <pose frame=''>-0.05626 0.691431 0.168122 0 -0 0</pose>
-        <scale>1 1 1</scale>
-        <link name='link'>
-          <pose frame=''>-0.05626 0.691431 0.168122 0 -0 0</pose>
-          <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>0 0 0 0 -0 0</acceleration>
-          <wrench>0 0 0 0 -0 0</wrench>
-        </link>
-      </model>
-      <model name='carre_bleu'>
-        <pose frame=''>0.038213 0.81528 0.109894 -6.6e-05 1e-06 -0.001126</pose>
-        <scale>1 1 1</scale>
-        <link name='link'>
-          <pose frame=''>0.038213 0.81528 0.109894 -6.6e-05 1e-06 -0.001126</pose>
-          <velocity>4e-06 0.000409 0.011847 -0.045537 0.000425 4e-06</velocity>
-          <acceleration>0.015997 1.23824 25.1788 0.678568 1.50537 0.031472</acceleration>
-          <wrench>0.000288 0.022288 0.453218 0 -0 0</wrench>
-        </link>
-      </model>
-      <model name='ground_plane'>
-        <pose frame=''>0 0 0 0 -0 0</pose>
-        <scale>1 1 1</scale>
-        <link name='link'>
-          <pose frame=''>0 0 0 0 -0 0</pose>
-          <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>0 0 0 0 -0 0</acceleration>
-          <wrench>0 0 0 0 -0 0</wrench>
-        </link>
-      </model>
-      <light name='sun'>
-        <pose frame=''>0 0 10 0 -0 0</pose>
-      </light>
-    </state>
-    <gui fullscreen='0'>
-      <camera name='user_camera'>
-        <pose frame=''>0.128665 0.309207 0.875523 0 1.10979 1.59856</pose>
-        <view_controller>orbit</view_controller>
-        <projection_type>perspective</projection_type>
-      </camera>
-    </gui>
-    <model name='Boite de rangement_0'>
+    <model name='Boite de rangement'>
       <static>0</static>
       <link name='link'>
         <pose frame=''>0 0 0 0 -0 0</pose>
@@ -255,7 +129,7 @@
         <kinematic>0</kinematic>
         <gravity>1</gravity>
       </link>
-      <pose frame=''>-0.013973 0.745011 0 0 -0 0</pose>
+      <pose frame=''>0.00991 -0.975494 0 0 -0 0</pose>
     </model>
     <model name='carre_bleu'>
       <static>0</static>
@@ -306,9 +180,9 @@
         <kinematic>0</kinematic>
         <gravity>1</gravity>
       </link>
-      <pose frame=''>0.038431 0.815679 0 0 -0 0</pose>
+      <pose frame=''>-0.038603 -1.06295 0 0 -0 0</pose>
     </model>
-    <model name='Etoile verte_0'>
+    <model name='Etoile verte'>
       <static>0</static>
       <link name='link'>
         <pose frame=''>0 0 0 0 -0 0</pose>
@@ -357,9 +231,9 @@
         <kinematic>0</kinematic>
         <gravity>1</gravity>
       </link>
-      <pose frame=''>0.033238 0.767526 0 0 -0 0</pose>
+      <pose frame=''>-0.029997 -1.03268 0 0 -0 0</pose>
     </model>
-    <model name='Fleur rose_1'>
+    <model name='Fleur rose'>
       <static>0</static>
       <link name='link'>
         <pose frame=''>0 0 0 0 -0 0</pose>
@@ -408,9 +282,9 @@
         <kinematic>0</kinematic>
         <gravity>1</gravity>
       </link>
-      <pose frame=''>0.038396 0.712255 0 0 -0 0</pose>
+      <pose frame=''>-0.007769 -1.04045 0 0 -0 0</pose>
     </model>
-    <model name='Hexagone jaune_0'>
+    <model name='Hexagone jaune'>
       <static>0</static>
       <link name='link'>
         <pose frame=''>0 0 0 0 -0 0</pose>
@@ -459,9 +333,9 @@
         <kinematic>0</kinematic>
         <gravity>1</gravity>
       </link>
-      <pose frame=''>-0.018881 0.820831 0 0 -0 0</pose>
+      <pose frame=''>-0.010538 -0.994432 0 0 -0 0</pose>
     </model>
-    <model name='Losange orange_0'>
+    <model name='Losange orange'>
       <static>0</static>
       <link name='link'>
         <pose frame=''>0 0 0 0 -0 0</pose>
@@ -510,9 +384,9 @@
         <kinematic>0</kinematic>
         <gravity>1</gravity>
       </link>
-      <pose frame=''>-0.018459 0.753807 0 0 -0 0</pose>
+      <pose frame=''>0.031228 -1.04536 0 0 -0 0</pose>
     </model>
-    <model name='Ovale rose_0'>
+    <model name='Ovale rose'>
       <static>0</static>
       <link name='link'>
         <pose frame=''>0 0 0 0 -0 0</pose>
@@ -561,9 +435,9 @@
         <kinematic>0</kinematic>
         <gravity>1</gravity>
       </link>
-      <pose frame=''>-0.012457 0.68124 0 0 -0 0</pose>
+      <pose frame=''>0.025087 -0.940474 0 0 -0 0</pose>
     </model>
-    <model name='Rectangle Bleu_0'>
+    <model name='Rectangle Bleu'>
       <static>0</static>
       <link name='link'>
         <pose frame=''>0 0 0 0 -0 0</pose>
@@ -612,7 +486,7 @@
         <kinematic>0</kinematic>
         <gravity>1</gravity>
       </link>
-      <pose frame=''>-0.053292 0.783193 0 0 -0 0</pose>
+      <pose frame=''>-0.022874 -0.932402 0 0 -0 0</pose>
     </model>
     <model name='Rond vert'>
       <static>0</static>
@@ -663,9 +537,9 @@
         <kinematic>0</kinematic>
         <gravity>1</gravity>
       </link>
-      <pose frame=''>-0.053967 0.723035 0 0 -0 0</pose>
+      <pose frame=''>0.02646 -0.963408 0 0 -0 0</pose>
     </model>
-    <model name='Triangle orange_1'>
+    <model name='Triangle orange'>
       <static>0</static>
       <link name='link'>
         <pose frame=''>0 0 0 0 -0 0</pose>
@@ -714,7 +588,133 @@
         <kinematic>0</kinematic>
         <gravity>1</gravity>
       </link>
-      <pose frame=''>-0.05626 0.691431 0 0 -0 0</pose>
+      <pose frame=''>0.05582 -1.00029 0 0 -0 0</pose>
     </model>
+    <state world_name='default'>
+      <sim_time>0 815000000</sim_time>
+      <real_time>0 0</real_time>
+      <wall_time>1592961771 731438309</wall_time>
+      <iterations>0</iterations>
+      <model name='Boite de rangement'>
+        <pose frame=''>0.015296 -0.995792 0.003437 -3e-06 4e-06 5e-06</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose frame=''>0.015296 -0.995792 0.003437 -3e-06 4e-06 5e-06</pose>
+          <velocity>0 1.9e-05 0.005475 0.040861 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Etoile verte'>
+        <pose frame=''>-0.029997 -1.03268 0.212108 0 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose frame=''>-0.029997 -1.03268 0.212108 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Fleur rose'>
+        <pose frame=''>-0.007769 -1.04045 0.078578 0 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose frame=''>-0.007769 -1.04045 0.078578 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Hexagone jaune'>
+        <pose frame=''>-0.010538 -0.994432 0.109935 0 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose frame=''>-0.010538 -0.994432 0.109935 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Losange orange'>
+        <pose frame=''>0.031564 -1.04456 0.140684 0 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose frame=''>0.031564 -1.04456 0.140684 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Ovale rose'>
+        <pose frame=''>0.025087 -0.940474 0.116895 0 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose frame=''>0.025087 -0.940474 0.116895 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Rectangle Bleu'>
+        <pose frame=''>-0.022874 -0.932402 0.129779 0 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose frame=''>-0.022874 -0.932402 0.129779 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Rond vert'>
+        <pose frame=''>0.02646 -0.963408 0.132164 0 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose frame=''>0.02646 -0.963408 0.132164 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Triangle orange'>
+        <pose frame=''>0.05582 -1.00029 0.139744 0 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose frame=''>0.05582 -1.00029 0.139744 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='carre_bleu'>
+        <pose frame=''>-0.038603 -1.06295 0.095576 0 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose frame=''>-0.038603 -1.06295 0.095576 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='ground_plane'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose frame=''>0 0 0 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <light name='sun'>
+        <pose frame=''>0 0 10 0 -0 0</pose>
+      </light>
+    </state>
+    <gui fullscreen='0'>
+      <camera name='user_camera'>
+        <pose frame=''>2.01316 -0.184051 1.25445 0 0.487642 -3.01099</pose>
+        <view_controller>orbit</view_controller>
+        <projection_type>perspective</projection_type>
+      </camera>
+    </gui>
   </world>
 </sdf>

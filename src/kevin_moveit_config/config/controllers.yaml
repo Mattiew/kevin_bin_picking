@@ -1,0 +1,12 @@
+
+controller_list:
+  - name: kevin_position_controller
+    action_ns: follow_joint_trajectory
+    type: FollowJointTrajectory
+    default: true
+    joints:
+      - Revolution31
+      - Revolution32
+      - Revolution33
+      - Revolution34
+      - Revolution35

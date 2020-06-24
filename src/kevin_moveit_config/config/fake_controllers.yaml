@@ -1,0 +1,8 @@
+controller_list:
+  - name: fake_kevin_arm_controller
+    joints:
+      - Revolution31
+      - Revolution32
+      - Revolution33
+      - Revolution34
+      - Revolution35
