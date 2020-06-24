@@ -4,6 +4,8 @@
 <xacro:include filename="$(find kevin_description)/urdf/materials.xacro" />
 <xacro:include filename="$(find kevin_description)/urdf/kevin.trans" />
 <xacro:include filename="$(find kevin_description)/urdf/kevin.gazebo" />
+<xacro:include filename="$(find kevin_description)/urdf/kevin.camera" />
+
 <link name="base_link">
   <inertial>
     <origin rpy="0 0 0" xyz="-0.07500900413459072 0.07499878591110573 0.010035808613354931"/>

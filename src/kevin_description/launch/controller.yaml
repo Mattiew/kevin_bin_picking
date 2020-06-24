@@ -4,7 +4,7 @@
     type: joint_state_controller/JointStateController
     publish_rate: 50
 
-  # Position Controllers --------------------------------------
+  # trajectory Controllers --------------------------------------
   
   kevin_position_controller:
     type: "effort_controllers/JointTrajectoryController"
@@ -21,4 +21,8 @@
       Revolution33: {p: 100, i: 1, d: 0.001}
       Revolution34: {p: 100,  i: 1, d: 0.001}
       Revolution35: {p: 100,  i: 1, d: 0.001}
+    
+  # Position Controllers --------------------------------------
+
+
 

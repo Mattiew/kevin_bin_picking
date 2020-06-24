@@ -1,0 +1,38 @@
+<?xml version="1.0" ?>
+<robot name="kevin" xmlns:xacro="http://www.ros.org/wiki/xacro">
+    <material name="red">
+        <color rgba="1 0.0 0.0 1.000"/>
+    </material>
+<xacro:property name="camera_link" value="0.02" /> <!-- Size of square 'camera' box -->
+
+ <joint name="camera_joint" type="fixed">
+    <axis xyz="0 0 0" />
+    <origin xyz="-0.02 -0.1 ${camera_link/2 + 0.02}" rpy="0 0 -1.57"/>
+    <parent link="Link_4_1"/>
+    <child link="camera_link"/>
+  </joint>
+
+  <!-- Camera -->
+  <link name="camera_link">
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <box size="${camera_link} ${camera_link} ${camera_link}"/>
+      </geometry>
+    </collision>
+
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <box size="${camera_link} ${camera_link} ${camera_link}"/>
+      </geometry>
+      <material name='red'/>
+    </visual>
+
+    <inertial>
+      <mass value="1e-5" />
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="1e-6" ixy="0" ixz="0" iyy="1e-6" iyz="0" izz="1e-6" />
+    </inertial>
+  </link>
+</robot>
