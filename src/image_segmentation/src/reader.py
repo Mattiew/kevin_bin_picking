@@ -9,12 +9,13 @@ from cv_bridge import CvBridge, CvBridgeError
 from time import time
 import sys
 
+
 rospack = rospkg.RosPack()
 base_path = rospack.get_path('image_segmentation')
 print('video will be saved at: '+base_path+'/video/')
 bridge = CvBridge()
 fourcc = cv2.VideoWriter_fourcc(*'XVID')
-out = cv2.VideoWriter(base_path+'/videos/output_%s.avi'%time(),fourcc, 30, (800,800))
+out = cv2.VideoWriter(base_path+'/videos/output_%s.avi'%time(),fourcc, 15, (800,800))
 
 def img_callback(ros_image):
     print('[%s]got an image'%rospy.Time.now())
@@ -27,6 +28,9 @@ def img_callback(ros_image):
         print(e)
     
     (rows, cos, channels) = cv_image.shape
+    
+    #ta fonction -> foo(cv_image)
+
     cv2.imshow('Image', cv_image)
     out.write(cv_image)
     cv2.waitKey(1)

@@ -1,6 +1,6 @@
 <?xml version="1.0" ?>
 <sdf version="1.5">
-  <model name="Triangle orange">
+  <model name="triangle_orange">
     <static>false</static>
     <link name="link">
       <pose>0 0 0 0 0 0</pose>

@@ -16,11 +16,11 @@
       - Revolution35
 
     gains:
-      Revolution31: {p: 100, i: 1, d: 0.001}
-      Revolution32: {p: 100,  i: 1, d: 0.1}
-      Revolution33: {p: 100, i: 1, d: 0.001}
-      Revolution34: {p: 100,  i: 1, d: 0.001}
-      Revolution35: {p: 100,  i: 1, d: 0.001}
+      Revolution31: {p: 60,  i: 0.05, d: 0.03, i_clamp_max: 100.0, i_clamp_min: -100.0, antiwindup: true }
+      Revolution32: {p: 60,  i: 0.05, d: 1, i_clamp_max: 100.0, i_clamp_min: -100.0, antiwindup: true }
+      Revolution33: {p: 60,  i: 0.05, d: 0.03, i_clamp_max: 100.0, i_clamp_min: -100.0, antiwindup: true }
+      Revolution34: {p: 60,  i: 0.05, d: 0.03, i_clamp_max: 100.0, i_clamp_min: -100.0, antiwindup: true }
+      Revolution35: {p: 60,  i: 0.05, d: 0.03, i_clamp_max: 100.0, i_clamp_min: -100.0, antiwindup: true }
     
   # Position Controllers --------------------------------------
 

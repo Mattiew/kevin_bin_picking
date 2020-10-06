@@ -171,6 +171,7 @@
   <link name="world"/>
 
   <joint name="fixed" type="fixed">
+    <origin rpy="0 0 0" xyz="0.07500900413459072 -0.07499878591110573 0"/>  
     <parent link="world"/>
     <child link="base_link"/>
   </joint>
